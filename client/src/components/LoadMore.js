@@ -1,5 +1,5 @@
-import React from "react";
-import Button from "./Button";
+import React from "react"
+import Button from "./Button"
 
 const LoadMore = () => {
   return (
@@ -12,7 +12,7 @@ const LoadMore = () => {
         Load more
       </Button>
     </div>
-  );
-};
+  )
+}
 
-export default LoadMore;
+export default LoadMore

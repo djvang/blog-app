@@ -1,6 +1,6 @@
-import React from "react";
-import Spinner from "./Spinner";
-import classNames from "classnames";
+import React from "react"
+import Spinner from "./Spinner"
+import classNames from "classnames"
 
 const Button = ({
   className: classNameProp = "",
@@ -15,19 +15,19 @@ const Button = ({
   disabled,
   ...props
 }) => {
-  let Component = component;
-  const properties = {};
+  let Component = component
+  const properties = {}
 
   if (href) {
-    Component = "a";
-    properties.href = href;
+    Component = "a"
+    properties.href = href
   }
 
   if (Component === "button") {
-    properties.type = type;
+    properties.type = type
 
     if (disabled) {
-      properties.disabled = disabled;
+      properties.disabled = disabled
     }
   }
 
@@ -37,10 +37,10 @@ const Button = ({
       "uk-active": active,
       "uk-disabled": disabled,
       [`uk-button-${color}`]: color,
-      [`uk-button-${size}`]: size
+      [`uk-button-${size}`]: size,
     },
     classNameProp
-  );
+  )
 
   return (
     <Component className={className} {...properties} {...props}>
@@ -51,7 +51,7 @@ const Button = ({
         ratio={0.6}
       />
     </Component>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

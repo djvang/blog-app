@@ -1,14 +1,18 @@
-import React from "react";
-import Layout from "../../components/Layout";
-import Post from "../post/Post";
-import Posts from "../posts/Posts";
+import React from "react"
+import Layout from "../../components/Layout"
+import Posts from "../posts/Posts"
+// import Post from "../post/Post";
+
+import FavoritesProvider from "../favorite/FavoritesProvider"
 
 const App = () => {
   return (
-    <Layout>
-      <Post />
-    </Layout>
-  );
-};
+    <FavoritesProvider>
+      <Layout>
+        <Posts />
+      </Layout>
+    </FavoritesProvider>
+  )
+}
 
-export default App;
+export default App

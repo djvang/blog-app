@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const CommentForm = () => {
   return (
@@ -32,7 +32,7 @@ const CommentForm = () => {
         </div>
       </fieldset>
     </form>
-  );
-};
+  )
+}
 
-export default CommentForm;
+export default CommentForm

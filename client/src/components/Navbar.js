@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import Favorites from "../features/favorite/Favorites";
+import Favorites from "../features/favorite/Favorites"
 
 const Navbar = () => {
   return (
@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

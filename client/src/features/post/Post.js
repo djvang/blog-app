@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import Comments from "../comments/Comments";
+import Comments from "../comments/Comments"
 
 const Post = () => {
   return (
@@ -40,7 +40,7 @@ const Post = () => {
       <hr />
       <Comments />
     </>
-  );
-};
+  )
+}
 
-export default Post;
+export default Post

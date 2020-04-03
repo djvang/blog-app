@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import Comment from "./Comment";
+import Comment from "./Comment"
 
 const CommentsList = () => {
   return (
@@ -13,7 +13,7 @@ const CommentsList = () => {
       <hr />
       <Comment />
     </div>
-  );
-};
+  )
+}
 
-export default CommentsList;
+export default CommentsList

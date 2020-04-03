@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Page = ({
   className,
@@ -9,48 +9,48 @@ const Page = ({
   onPage = () => {},
   ...props
 }) => {
-  let Component = "a";
-  let classNames = className;
+  let Component = "a"
+  let classNames = className
 
   if (active) {
-    Component = "span";
-    classNames += ` uk-active`;
+    Component = "span"
+    classNames += ` uk-active`
   }
 
   if (disabled) {
-    classNames += ` uk-disabled`;
+    classNames += ` uk-disabled`
   }
 
   return (
     <li className={classNames}>
       <Component
-        onClick={event => {
-          event.preventDefault();
-          onPage(page, event);
+        onClick={(event) => {
+          event.preventDefault()
+          onPage(page, event)
         }}
         {...props}
       >
         {children}
       </Component>
     </li>
-  );
-};
+  )
+}
 
-const PrevPage = props => {
+const PrevPage = (props) => {
   return (
     <Page {...props}>
       <span data-uk-pagination-previous />
     </Page>
-  );
-};
+  )
+}
 
-const NextPage = props => {
+const NextPage = (props) => {
   return (
     <Page {...props}>
       <span data-uk-pagination-next />
     </Page>
-  );
-};
+  )
+}
 
 const Pagination = () => {
   return (
@@ -79,7 +79,7 @@ const Pagination = () => {
 
       <NextPage page={5} href="/" />
     </ul>
-  );
-};
+  )
+}
 
-export default Pagination;
+export default Pagination
