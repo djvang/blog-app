@@ -6,7 +6,7 @@ import Posts from "../posts/Posts";
 const App = () => {
   return (
     <Layout>
-      <Post />
+      <Posts />
     </Layout>
   );
 };
